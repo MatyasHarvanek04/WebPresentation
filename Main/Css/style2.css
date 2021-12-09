@@ -4,3 +4,19 @@
     padding: 0;
     width: 100%;
 }
+
+.bss {
+    height: 100px;
+    color: blue;
+}
+
+#obsah {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(179, 179, 231);
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+}
