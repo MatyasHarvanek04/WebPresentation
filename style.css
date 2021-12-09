@@ -258,6 +258,7 @@
           transform: translateX(-50%);
           color: white;
           font-family: 'Montserrat', sans-serif;
+
       }
       
       .nadpis {
@@ -273,4 +274,5 @@
           filter: contrast(200%);
           filter: brightness(1);
           font-style: italic;
+          text-align: center;
       }
