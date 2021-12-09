@@ -52,40 +52,53 @@ ul li {
     list-style: none;
 }
 
-.m1 {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 4%;
+#navi {
     width: 15%;
-    height: 40px;
+    height: 300px;
     position: fixed;
-    z-index: 1;
-    background-color: black;
+    z-index: 100;
+}
+
+#m1 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    margin-top: 10px;
+    height: 50px;
     border-radius: 20px;
+    background-color: crimson;
     text-align: center;
 }
 
-.m2 {
+#m2 {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 7%;
-    width: 15%;
-    position: fixed;
-    z-index: 100;
-    color: black;
-}
-
-.m3 {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 10%;
-    width: 15%;
-    position: fixed;
-    z-index: 100;
-    color: black;
+    padding-top: 20px;
     margin-top: 10px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: crimson;
+    text-align: center;
 }
 
-#navigaceleft {
+#m3 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    margin-top: 10px;
+    height: 50px;
     border-radius: 20px;
-    background-color: blueviolet;
-    width: 200px;
-    position: relative;
+    background-color: crimson;
+    text-align: center;
+}
+
+#m4 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: crimson;
+    text-align: center;
+}
+
+#pati {
+    margin-top: 90%;
 }
