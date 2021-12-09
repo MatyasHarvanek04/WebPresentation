@@ -15,9 +15,7 @@ html {
 }
 
 #obsah {
-    border-radius: 20px;
     width: 100%;
-    background-color: rgb(179, 179, 231);
     box-sizing: border-box;
     overflow: hidden;
     margin-top: 0;
@@ -27,11 +25,34 @@ html {
     top: 15%;
 }
 
+#section1 {
+    width: 100%;
+    height: 1000px;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+}
+
+#section2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 1000px;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+}
+
+#section3 {
+    margin-top: 20px;
+    width: 100%;
+    height: 1000px;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+}
+
 ul li {
     list-style: none;
 }
 
-.mm {
+.m1 {
     font-family: 'Montserrat', sans-serif;
     margin-top: 4%;
     width: 15%;
@@ -49,7 +70,7 @@ ul li {
     width: 15%;
     position: fixed;
     z-index: 100;
-    color: cyan;
+    color: black;
 }
 
 .m3 {
@@ -58,7 +79,7 @@ ul li {
     width: 15%;
     position: fixed;
     z-index: 100;
-    color: cyan;
+    color: black;
     margin-top: 10px;
 }
 
