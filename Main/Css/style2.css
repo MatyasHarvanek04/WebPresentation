@@ -102,3 +102,31 @@ ul li {
 #pati {
     margin-top: 90%;
 }
+table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+    background-color: white;
+    margin-left: 30%;
+   margin-top: 100px;
+    top:20%;
+    
+}
+
+td, th {
+    border-left:solid black 1px;
+    border-top:solid black 1px;
+}
+
+th {
+    background-color: rgb(235, 235, 241);
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+#obsahsection {
+    margin-left: 300px;
+    width: 800px;
+}
