@@ -39,11 +39,12 @@
 </head>
 <body>
     <div id="navigation">
-        <img src="HSlideShow/icom23.png" class="logo">
+        <img onclick="function(){window.location = '/index.html';};" src="HSlideShow/icom23.png" class="logo">
     </div>
 
-    
+        
         <form action="index.php" method="POST">
+        <H1>Admin login</H1>
         <label for="fname">UserName:</label>
         <input type="UserName" id="fname" name="username"><br><br>
         <label for="lname">Password:</label>

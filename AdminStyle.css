@@ -10,21 +10,43 @@ body
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    width: 300px;
 
+}
+.bt:hover
+{
+    width: 320px;
+    height: 55px;
 }
 
 input
 {
-    left: 100px;
+    left: 15px;
     background-color: transparent;
-    border: none;
     position: relative;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
     
 }
 label
-{   position: absolute;
-    
+{   
+    left: 50%;
+
+    transform: translateX(-50%);
 } 
+
+h1
+{
+    position: absolute;
+    white-space:nowrap;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 50;
+}
 
 
 form
@@ -41,6 +63,6 @@ form
 {
     position: relative;
     left: 50%;
-    transform: translate(-50%);
-
+    transform-origin: center;
+    transform: translate(-54%);
 }
