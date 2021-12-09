@@ -25,22 +25,22 @@ html {
     top: 15%;
 }
 
-#section1 {
+.section1 {
     width: 100%;
     height: 1000px;
     border-radius: 20px;
     background-color: cornflowerblue;
 }
 
-#section2 {
-    margin-top: 20px;
+.section2 {
+    margin-top: 1000px;
     width: 100%;
     height: 1000px;
     border-radius: 20px;
     background-color: cornflowerblue;
 }
 
-#section3 {
+.section3 {
     margin-top: 20px;
     width: 100%;
     height: 1000px;
@@ -53,6 +53,7 @@ ul li {
 }
 
 #navi {
+    margin-top: 1%;
     width: 15%;
     height: 300px;
     position: fixed;
@@ -102,20 +103,20 @@ ul li {
 #pati {
     margin-top: 90%;
 }
+
 table {
-    border-collapse:separate;
-    border:solid black 1px;
-    border-radius:6px;
+    border-collapse: separate;
+    border: solid black 1px;
+    border-radius: 6px;
     background-color: white;
     margin-left: 30%;
-   margin-top: 100px;
-    top:20%;
-    
+    top: 20%;
 }
 
-td, th {
-    border-left:solid black 1px;
-    border-top:solid black 1px;
+td,
+th {
+    border-left: solid black 1px;
+    border-top: solid black 1px;
 }
 
 th {
@@ -123,10 +124,20 @@ th {
     border-top: none;
 }
 
-td:first-child, th:first-child {
-     border-left: none;
+td:first-child,
+th:first-child {
+    border-left: none;
 }
+
 #obsahsection {
     margin-left: 300px;
     width: 800px;
+}
+
+#tb {
+    margin-top: 100px;
+}
+
+h1 {
+    margin-top: 10px;
 }
