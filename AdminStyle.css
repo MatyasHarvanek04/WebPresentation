@@ -1,0 +1,68 @@
+body
+{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bt
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+
+}
+.bt:hover
+{
+    width: 320px;
+    height: 55px;
+}
+
+input
+{
+    left: 15px;
+    background-color: transparent;
+    position: relative;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    
+}
+label
+{   
+    left: 50%;
+
+    transform: translateX(-50%);
+} 
+
+h1
+{
+    position: absolute;
+    white-space:nowrap;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 50;
+}
+
+
+form
+{
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.logo
+{
+    position: relative;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-54%);
+}

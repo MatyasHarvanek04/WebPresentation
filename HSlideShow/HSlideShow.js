@@ -15,21 +15,16 @@ var pages = [];
 var targetHorizontalScroll = 0;
 var targetPage;
 var targetScrollX;
-var targetScrollY;
 var lastPage;
 var MainDiv;
 
-var UpArrow;
-var DownArrow;
 var LeftArrow;
 var RightArrow;
 
 
-class Page
-{
-    constructor(x, y, div)
-    {
-        console.log("x: " +  x + " y: " + y);
+class Page {
+    constructor(x, y, div) {
+        console.log("x: " + x + " y: " + y);
         this.x = x;
         this.y = y;
         this.RealX = Number(this.x * MainDiv.clientWidth);
@@ -37,8 +32,7 @@ class Page
         this.div = div;
     }
 
-    Refresh()
-    {
+    Refresh() {
         this.div.style.left = (this.x * MainDiv.clientWidth) + "px";
         this.div.style.top = (this.y * MainDiv.clientHeight) + "px";
         this.RealX = this.x * MainDiv.clientWidth;
@@ -48,9 +42,11 @@ class Page
 
 Init();
 setInterval(Update, 1);
+setInterval(() => {
+    //SwitchPage("ArrowRight") 
+}, 5000);
 
-function Init()
-{
+function Init() {
 
     //Getting DOM elemnts
     MainDiv = document.getElementById("Presentation");
@@ -62,163 +58,99 @@ function Init()
 
     //Loading Pages
     var StartPage;
-    for (let i = 0; i < divs.length; i++) 
-    {
-        if(divs[i].classList.contains("page"))
-        {
+    for (let i = 0; i < divs.length; i++) {
+        if (divs[i].classList.contains("page")) {
             var position = divs[i].id.split("-");
-            
+
             pages.push(new Page(position[0].substring(1), position[1], divs[i]));
-            if(divs[i].classList.contains("startingPage"))
-            {
+            if (divs[i].classList.contains("startingPage")) {
                 StartPage = pages[pages.length - 1];
             }
         }
     }
 
     //Adding EventListeners
-    DownArrow.addEventListener("click", function () {SwitchPage("ArrowDown");});
-    UpArrow.addEventListener("click", function () {SwitchPage("ArrowUp");});
-    LeftArrow.addEventListener("click", function () {SwitchPage("ArrowLeft");});
-    RightArrow.addEventListener("click", function () {SwitchPage("ArrowRight");});
+    LeftArrow.addEventListener("click", function() { SwitchPage("ArrowLeft"); });
+    RightArrow.addEventListener("click", function() { SwitchPage("ArrowRight"); });
     window.addEventListener("resize", RefreshPages);
 
 
     //Init variables
     targetPage = StartPage;
     targetScrollX = StartPage.RealX;
-    targetScrollY = StartPage.RealY;
 
     //Calling Refresh Methods
     RefreshPages();
-    UpdateArrows();
 }
 
 
 // Swiping
-document.addEventListener('swiped', function(e) 
-{
-    if(MainDiv.contains(e.target))
-    {
-        if(e.detail.dir == "down") SwitchPage("ArrowUp");
-        if(e.detail.dir == "up") SwitchPage("ArrowDown");
-        if(e.detail.dir == "right") SwitchPage("ArrowLeft");
-        if(e.detail.dir == "left") SwitchPage("ArrowRight");
+document.addEventListener('swiped', function(e) {
+    if (MainDiv.contains(e.target)) {
+        if (e.detail.dir == "right") SwitchPage("ArrowLeft");
+        if (e.detail.dir == "left") SwitchPage("ArrowRight");
     }
 });
 
 
-function OnKeyDown(e)
-{
+function OnKeyDown(e) {
     SwitchPage(e.code);
 }
 
-function SwitchPage(Code)
-{
-    if(Code == "ArrowRight")
-    {
-        if(GetPage(Number(targetPage.x) +1, targetPage.y) != null)
-        {
-            ChangePage(GetPage(Number(targetPage.x) +1 ,Number(targetPage.y)));
+function SwitchPage(Code) {
+    if (Code == "ArrowRight") {
+        if (GetPage(Number(targetPage.x) + 1, targetPage.y) != null) {
+            ChangePage(GetPage(Number(targetPage.x) + 1, Number(targetPage.y)));
             return;
         }
     }
-    if(Code == "ArrowLeft")
-    {
-        if(GetPage(Number(targetPage.x) -1, targetPage.y) != null)
-        {
-            ChangePage(GetPage(Number(targetPage.x) -1 , Number(targetPage.y)));
-            return;
-        }
-    }
-    if(Code == "ArrowDown")
-    {
-        if(GetPage(Number(targetPage.x), Number(targetPage.y) +1) != null)
-        {
-            ChangePage(GetPage(Number(targetPage.x), Number(targetPage.y) +1));
-            return;
-        }
-    }
-    if(Code == "ArrowUp")
-    {
-        if(GetPage(Number(targetPage.x), Number(targetPage.y) -1) != null)
-        {
-            ChangePage(GetPage(Number(targetPage.x), Number(targetPage.y) -1));
+    if (Code == "ArrowLeft") {
+        if (GetPage(Number(targetPage.x) - 1, targetPage.y) != null) {
+            ChangePage(GetPage(Number(targetPage.x) - 1, Number(targetPage.y)));
             return;
         }
     }
 }
 
-function ChangePage(page)
-{
+function ChangePage(page) {
     targetPage = page;
-    UpdateArrows();
 }
 
-function UpdateArrows()
-{
-    console.log("jess");
-    if(GetPage(Number(targetPage.x) + 1, Number(targetPage.y)) != null) RightArrow.style.display = "block";
-    else RightArrow.style.display = "none";
-    if(GetPage(Number(targetPage.x) -1, Number(targetPage.y)) != null) LeftArrow.style.display = "block";
-    else LeftArrow.style.display = "none";
-    if(GetPage(Number(targetPage.x), Number(targetPage.y) - 1) != null) UpArrow.style.display = "block";
-    else UpArrow.style.display = "none";
-    if(GetPage(Number(targetPage.x), Number(targetPage.y) + 1) != null) DownArrow.style.display = "block";
-    else DownArrow.style.display = "none";
-        
-    
 
-}
+function GetPage(x) {
+    if (x == pages.length) {
+        return pages[0];
+    }
+    if (x == -1) {
+        return pages[pages.length - 1];
+    }
 
-function GetPage(x,y)
-{
-    for (let i = 0; i < pages.length; i++) 
-    {
-        if(pages[i].x == x && pages[i].y == y)
-        {
+    for (let i = 0; i < pages.length; i++) {
+        if (pages[i].x == x) {
             return pages[i];
         }
     }
 }
 
-function Update()
-{
-    if(targetScrollX != targetPage.RealX)
-    {
+function Update() {
+    if (targetScrollX != targetPage.RealX) {
         targetScrollX = Lerp(targetScrollX, targetPage.RealX, 0.02);
-        if(Math.abs(targetScrollX - targetPage.RealX) < 0.5)
-        {
+        if (Math.abs(targetScrollX - targetPage.RealX) < 0.5) {
             targetScrollX = targetPage.RealX;
         }
     }
-    if(targetScrollY != targetPage.RealY)
-    {
-        targetScrollY = Lerp(targetScrollY, targetPage.RealY, 0.02);
-        if(Math.abs(targetScrollY - targetPage.RealY) < 0.5)
-        {
-            targetScrollY = targetPage.RealY;
-        }
-    }
-    if(targetPage != null)
-    {
-        MainDiv.scroll(targetScrollX , targetScrollY);
+    if (targetPage != null) {
+        MainDiv.scroll(targetScrollX, 0);
     }
 }
 
-function Lerp(start, end, t)
-{
-    return start + (end - start) * t; 
+function Lerp(start, end, t) {
+    return start + (end - start) * t;
 }
 
-function RefreshPages()
-{
-    for (let i = 0; i < pages.length; i++) 
-    {
+function RefreshPages() {
+    for (let i = 0; i < pages.length; i++) {
         pages[i].Refresh();
     }
     targetScrollX = targetPage.RealX;
-    targetScrollY = targetPage.RealY;
 }
-
-
