@@ -1,4 +1,4 @@
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
         .web {
             margin: 0;
             padding: 0;
@@ -79,33 +79,33 @@
             filter: contrast(50%);
         }
         
-        #P1-0 {
+        #P0-0 {
             background-image: url(HSlideShow/Sprites/Icombus.jpg);
             background-position: center;
             background-size: 100%;
         }
         
-        #P2-0 {
+        #P1-0 {
             background-image: url(HSlideShow/Sprites/truckicom.jpg);
             background-position: center;
             background-size: 100%;
         }
         
-        #P3-0 {
+        #P2-0 {
             background-image: url(HSlideShow/Sprites/zamest2.png);
             background-position: center;
             background-size: 100%;
             opacity: 0.8;
         }
         
-        #P4-0 {
+        #P3-0 {
             background-image: url(HSlideShow/Sprites/nabor.png);
             background-position: center;
             background-size: 100%;
             opacity: 0.8;
         }
         
-        #P5-0 {
+        #P4-0 {
             background-image: url(HSlideShow/Sprites/foto_servis.jpg);
             background-position: center;
             background-size: 100%;
