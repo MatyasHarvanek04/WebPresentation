@@ -45,7 +45,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: blue;
+    color: rgb(18, 64, 148);
+    ;
 }
 
 #logo {
@@ -235,8 +236,10 @@ img {
     border: none;
     width: 190px;
     height: 48px;
-    background-color: blue;
+    background-color: rgb(18, 64, 148);
     transition: 0.1s;
+    opacity: 1;
+    filter: brightness(1);
 }
 
 .bt:hover {
@@ -248,7 +251,8 @@ img {
 }
 
 a {
-    color: blue;
+    color: rgb(18, 64, 148);
+    ;
 }
 
 #title {
