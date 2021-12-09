@@ -26,19 +26,34 @@ ul li {
     list-style: none;
 }
 
-.m3 {
+.m1 {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
+    margin-top: 1%;
+    width: 15%;
+    height: 40px;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .m2 {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
+    margin-top: 4%;
+    width: 15%;
+    position: fixed;
+    z-index: 100;
+    color: cyan;
 }
 
 .m3 {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
+    margin-top: 7%;
+    width: 15%;
+    position: fixed;
+    z-index: 100;
+    color: cyan;
 }
 
 #navigaceleft {
