@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
 .web {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+body
+{
+    margin: 0;
 }
 
 ion-icon {
@@ -244,3 +251,9 @@ a {
     font-size: 64px;
     color: white;
 }
+
+label
+{
+    
+}
+

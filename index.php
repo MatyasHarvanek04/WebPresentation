@@ -20,7 +20,6 @@
                     $result = mysqli_query($conn, $sql);
                     $logins = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 }
-                
             }
         }
     }
@@ -34,16 +33,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="AdminStyle.css">
     <title>Testing</title>
 </head>
 <body>
-    <form action="index.php" method="POST">
-    <label for="fname">UserName:</label>
-    <input type="UserName" id="fname" name="username"><br><br>
-    <label for="lname">Password:</label>
-    <input type="password" id="Password" name="password"><br><br>
-    <input type="submit" name="submit" value="Submit">
-    </form>
+    <div id="navigation">
+        <img src="HSlideShow/icom23.png" class="logo">
+    </div>
+
+    
+        <form action="index.php" method="POST">
+        <label for="fname">UserName:</label>
+        <input type="UserName" id="fname" name="username"><br><br>
+        <label for="lname">Password:</label>
+        <input type="password" id="Password" name="password"><br><br>
+        <input class="bt" type="submit" name="submit" value="Login">
+        </form>
+
+    
     <?php
         if(isset($logins))
         {
@@ -77,9 +85,6 @@
                 }
             }
         }
-
-        //echo password_hash($password . $username, PASSWORD_DEFAULT);
-
     ?>
 </body>
 </html>
