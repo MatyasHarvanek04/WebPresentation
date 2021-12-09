@@ -1,4 +1,51 @@
 .web {
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+
+ion-icon {
+    width: 25px;
+    height: 25px;
+    margin: 15px 15px 15px 15px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin: 15px 15px 15px 15px;
+}
+
+#cont {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#logo {
+    width: 75px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-left: 0;
+    margin-left: 0;
 }
