@@ -1,0 +1,46 @@
+body
+{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bt
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+input
+{
+    left: 100px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    
+}
+label
+{   position: absolute;
+    
+} 
+
+
+form
+{
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.logo
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+}
