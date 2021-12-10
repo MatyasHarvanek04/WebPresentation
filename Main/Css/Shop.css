@@ -52,6 +52,7 @@ background-size: 190%;
 background-color: #124094;
 background-blend-mode:multiply;
 border-radius: 20px;
+cursor: pointer;
 }
 
 .Name
@@ -90,7 +91,7 @@ h1
 .bt:hover {
     background-color: rgb(114, 109, 109);
     font-size: 17px;
-    cursor:;
+    cursor: pointer;
     opacity: 1;
     
     
