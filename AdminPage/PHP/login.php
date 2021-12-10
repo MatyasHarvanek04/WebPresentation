@@ -10,8 +10,15 @@
         if($logins)
         {
             $logined = true;
+            echo 'Prihlášen jako:'. $logins[0]['username'];
+           
         }
         
     }
+    else
+    {
+        
+    }
+
     
 ?>
