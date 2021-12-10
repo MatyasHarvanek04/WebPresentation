@@ -105,6 +105,15 @@ ul li {
     background-color: rgb(18, 64, 148);
     text-align: center;
 }
+#m5 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(18, 64, 148);
+    text-align: center;
+}
 
 #pati {
     margin-top: 90%;
@@ -138,6 +147,12 @@ th:first-child {
 #obsahsection {
     margin-left: 300px;
     width: 700px;
+}
+#obsahsection1 {
+    
+    width: 700px;
+    margin: 20px 15px 10px 15px;
+    margin-left: 300px;
 }
 
 #tb {
