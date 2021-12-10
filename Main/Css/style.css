@@ -199,7 +199,7 @@
         
         a {
             color: rgb(18, 64, 148);
-            ;
+            
         }
         
         #title {
@@ -210,6 +210,8 @@
             color: white;
             font-family: 'Montserrat', sans-serif;
         }
+
+        
         
         .nadpis {
             width: 1300px;
