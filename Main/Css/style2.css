@@ -245,7 +245,7 @@ h1 {
 #cp {
     height: 350px;
     width: 100%;
-    background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(48, 62, 130, 1) 38%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(48,62,130,1) 38%, rgba(0,212,255,1) 100%);
     position: absolute;
     top: 60%;
     left: 100%;
@@ -504,7 +504,7 @@ iframe
     #cp {
         height: 200px;
         width: 100%;
-        background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(48, 62, 130, 1) 38%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(48,62,130,1) 38%, rgba(0,212,255,1) 100%);
         position: absolute;
         left: 100%;
         transform: translateX(-100%);
