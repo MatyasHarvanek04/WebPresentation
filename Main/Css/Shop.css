@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+body
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+#Menu
+{
+    width: 90%;
+    max-height: 100%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    margin-left: -40px;
+    margin-top: 0px;
+    gap: 0px;
+    row-gap: 0px;
+    column-gap: 0px;
+    grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
+    overflow-x: hidden;
+}
+
+
+
+
+.Item
+{
+    margin-left: 80px;
+    position: relative;
+    margin-top: 50px;
+    height: 250px;
+    background-image: url(https://c1.wallpaperflare.com/preview/282/530/546/ticket-hand-holding-crowd.jpg);
+    text-align: center;
+    background-position: center;
+    background-size: 150%;
+    backdrop-filter: blur(1px);
+    background-color: gray;
+    background-blend-mode: multiply;
+    border-radius: 5px;
+    transition: 0.2s;
+
+
+}
+.Item:hover
+{
+background-size: 190%;
+background-color: #124094;
+background-blend-mode:multiply;
+border-radius: 20px;
+}
+
+.Name
+{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    color: white;
+}
+
+
+.bt 
+{
+    font-size: 15px;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    width: 150px;
+    height: 20px;
+    background-color: green;
+    transition: 0.1s;
+    float: left;
+}
+.bt.remove
+{
+    background-color: red;
+
+}
+
+h1
+{
+    text-align: center;
+}
+
+.bt:hover {
+    background-color: rgb(114, 109, 109);
+    font-size: 17px;
+    cursor:;
+    opacity: 1;
+    
+    
+}
+.Controls
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+ul
+{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-60%);
+    list-style-type: none;
+}
+li
+{
+    margin-top: 15px;
+}
+
+
+
+.PlusText
+{
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -55%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+
+.AddButton
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    margin-left: 15px;
+    margin-top: 93vh;
+    
+    height: 50px;
+    background-color: green;
+    border-width: 0;
+    border-radius: 50%;
+    
+}
+
+
+#nazev
+{
+        font-size: 30px;
+
+}
+
+
+#popis
+{
+    font-size: 20px;
+}
+
+#cena
+{
+    
+  font-size: 20px;
+
+}

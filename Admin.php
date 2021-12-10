@@ -89,13 +89,9 @@
         <?php
             if($logined)
             {
-                echo "<H1>Loged in</H1>
-                <input class='bt' type='submit' name='logout' value='Log Out'>
-                <button style='top: 50px; font-size: 10px; width=75px; height: 20px;' class='bt' onclick='window.location.href='/AdminPage/PHP/AdminEditing.php';'>
-                Go back
-                </button>
-                ";
-                
+                echo "<a href=" . htmlspecialchars("/AdminPage/PHP/AdminEditing.php", ENT_QUOTES) . "><H1>Loged in</H1>
+                <input class='bt' style='top: 50px; text-align: center;'  name='logout' value='GoBack'> 
+                <input class='bt' type='submit' name='logout' value='Log Out'>";           
             }
             else
             {
@@ -106,6 +102,8 @@
                     <label for='lname'>Password:</label>
                     <input type='password' id='Password' name='password'><br><br>
                     <input class='bt' type='submit' name='submit' value='Log in'>";
+                echo "<a href=" . htmlspecialchars("/index.html", ENT_QUOTES) . ">
+                <input class='bt' style='top: 135px; text-align: center;'  name='logout' value='Back to home'>";
             }
         ?>
         
