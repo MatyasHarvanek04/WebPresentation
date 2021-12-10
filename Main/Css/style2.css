@@ -119,17 +119,6 @@ th:first-child {
     border-left: none;
 }
 
-#obsahsection {
-    margin-left: 300px;
-    width: 700px;
-}
-
-#obsahsection1 {
-    width: 100px;
-    margin: 20px 15px 10px 15px;
-    margin-left: 300px;
-}
-
 #tb {
     margin-top: 100px;
 }
@@ -145,35 +134,29 @@ th:first-child {
     list-style: none;
     display: inline-block;
     margin-right: 25px;
-    
 }
 
-.lgs
-{
+.lgs {
     transition: 0.5s;
 }
-
-
 
 ul li a {
     color: rgb(18, 64, 148);
     text-decoration: none;
 }
 
-
-
-
 .am {
     position: absolute;
     color: white;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-   
+    transform: translate(-50%, -50%);
 }
 
-#m1, #m2, #m3, #m4
-{
+#m1,
+#m2,
+#m3,
+#m4 {
     position: relative;
     left: -70px;
     border: white;
@@ -181,37 +164,27 @@ ul li a {
     border-style: solid;
     box-shadow: 0px 0px 0px grey;
     transition: 0.5s;
-
 }
 
-#m1:hover
-{
+#m1:hover {
     left: -25px;
     box-shadow: 0px 5px 5px grey;
 }
 
-
-#m2:hover
-{
-    left: -25px;
-    box-shadow: 0px 5px 5px grey;
-}
-#m3:hover
-{
-    
+#m2:hover {
     left: -25px;
     box-shadow: 0px 5px 5px grey;
 }
 
-#m4:hover
-{
+#m3:hover {
     left: -25px;
     box-shadow: 0px 5px 5px grey;
 }
 
-
-    
-
+#m4:hover {
+    left: -25px;
+    box-shadow: 0px 5px 5px grey;
+}
 
 #tb {
     margin-top: 150px;
@@ -238,9 +211,9 @@ ul li a {
 #video {
     position: absolute;
     margin-top: 0;
-    left: 95%;
-    transform: translateX(-95%);
-    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45%;
     border-radius: 10px;
 }
 
@@ -262,11 +235,11 @@ h1 {
 }
 
 #cp {
-    height: 600px;
-    width: 500px;
+    height: 350px;
+    width: 100%;
     background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(48, 62, 130, 1) 38%, rgba(0, 212, 255, 1) 100%);
     position: absolute;
-    top: 17%;
+    top: 60%;
     left: 100%;
     transform: translateX(-100%);
     border-radius: 20px;
@@ -284,6 +257,7 @@ h1 {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
+    width: 100%
 }
 
 #photo {
@@ -345,19 +319,102 @@ ul.breadcrumb li a:hover {
     font-size: 24px;
 }
 
-@media only screen and (max-width:1400px) {
+#levo {
+    color: White;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(18, 64, 148);
+    width: 600px;
+    height: 300px;
+    float: left;
+    margin: 20px 15px 10px 15px;
+}
+
+#stred {
+    color: White;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    background-color: #0275d8;
+    float: left;
+    width: 600px;
+    height: 300px;
+    margin: 20px 15px 10px 17px;
+}
+
+#pravo {
+    color: White;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(18, 64, 148);
+    width: 600px;
+    height: 300px;
+    float: right;
+    margin: 20px 22px 10px 10px;
+}
+
+@media only screen and (max-width: 1400px) {
     .web {
-        width: 60%;
+        width: 100%;
     }
-    nav ul {
+    #nav #menulist {
         width: 100%;
         position: absolute;
         top: 75px;
         right: 0;
     }
-    nav ul li {
+    #nav #menulist #m1 #m2 #m3 {
         list-style: none;
         display: inline-block;
         margin-top: 20px;
+    }
+    #navi {
+        width: 100%;
+        position: fixed;
+        align-items: center;
+    }
+    #nav {
+        margin-top: 0px;
+        flex: 1;
+        text-align: center;
+    }
+    #section1 {
+        margin-top: 70px;
+        height: 925px;
+    }
+    .ad {
+        margin-top: px;
+        text-align: center;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+    #cp {
+        height: 200px;
+        width: 100%;
+        background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(48, 62, 130, 1) 38%, rgba(0, 212, 255, 1) 100%);
+        position: absolute;
+        left: 100%;
+        transform: translateX(-100%);
+        border-radius: 20px;
+        top: 65%
+    }
+    iframe {
+        width: 350px;
+        height: 200px;
+    }
+    h1 {
+        margin-top: 10px;
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #video1 {
+        top: 100%;
     }
 }
