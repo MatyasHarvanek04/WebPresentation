@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .web {
     margin: 0;
     padding: 0;
@@ -407,12 +412,12 @@ ul.breadcrumb li a:hover {
         text-align: center;
         color: black;
         font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
+        font-size: 14px;
     }
     #cp {
         height: 200px;
         width: 100%;
-        background: linear-gradient(270deg, rgba(2, 0, 36, 1) 0%, rgba(48, 62, 130, 1) 38%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(48, 62, 130, 1) 38%, rgba(0, 212, 255, 1) 100%);
         position: absolute;
         left: 100%;
         transform: translateX(-100%);
@@ -424,7 +429,7 @@ ul.breadcrumb li a:hover {
         height: 200px;
     }
     h1 {
-        margin-top: 10px;
+        margin-top: 24px;
         color: black;
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
@@ -433,6 +438,6 @@ ul.breadcrumb li a:hover {
         transform: translateX(-50%);
     }
     #video1 {
-        top: 100%;
+        size: 100%;
     }
 }
