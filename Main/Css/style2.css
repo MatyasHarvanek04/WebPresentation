@@ -166,11 +166,7 @@ ul li a {
     color: white;
 }
 
-#video {
-    float:right;
-    margin-top: 0px;
-   
-}
+
 
 #tb {
     margin-top: 150px;
@@ -192,4 +188,21 @@ ul li a {
     margin: 20px 15px 10px 15px;
     width: 700px;
     height: 415px;
+}
+#video {
+    position: absolute;
+    margin-top: 0;
+    left: 95%;
+    transform: translateX(-95%);
+    top: 3%;
+    border-radius: 10px;
+}
+
+#video2 {
+    position: absolute;
+    margin-top: 0;
+    left: 95%;
+    transform: translateX(-95%);
+    top: 35%;
+    border-radius: 10px;
 }
