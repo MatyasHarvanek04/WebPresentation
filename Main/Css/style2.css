@@ -166,8 +166,6 @@ ul li a {
     color: white;
 }
 
-
-
 #tb {
     margin-top: 150px;
 }
@@ -184,11 +182,12 @@ ul li a {
 #obrazek2 {
     background-image: url(../Sprites/busicom.png);
     background-position: center;
-   float: left;
+    float: left;
     margin: 20px 15px 10px 15px;
     width: 700px;
     height: 415px;
 }
+
 #video {
     position: absolute;
     margin-top: 0;
@@ -205,4 +204,21 @@ ul li a {
     transform: translateX(-95%);
     top: 35%;
     border-radius: 10px;
+}
+
+@media only screen and (max-width:1400px) {
+    .web {
+        width: 60%;
+    }
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+    }
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-top: 20px;
+    }
 }
