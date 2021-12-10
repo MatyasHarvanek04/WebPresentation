@@ -43,7 +43,7 @@ class Page {
 Init();
 setInterval(Update, 1);
 setInterval(() => {
-    SwitchPage("ArrowRight")
+    //SwitchPage("ArrowRight")
 }, 5000);
 
 function Init() {

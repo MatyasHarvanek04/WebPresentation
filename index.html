@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Css/style.css">
 
     <title>Document</title>
 </head>
@@ -17,31 +17,32 @@
         <div id="cont">
 
             <div id="navigation">
-                <img src="HSlideShow/icom23.png" class="logo">
+                <img src="../Main/Sprites/icom23.png" class="logo">
                 <nav>
-                    <ul>
+                    <ul id="menuList">
                         <li>
-                            <a href="autobus.html">
+                            <a href="Pages/autobus.html">
                                 <ion-icon name="bus-outline" id="bus"></ion-icon>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="Pages/servis.html">
                                 <ion-icon name="construct-outline"></ion-icon>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="Pages/nabor.html">
                                 <ion-icon name="person-add-outline"></ion-icon>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="Pages/kontakty.html">
                                 <ion-icon name="call-outline"></ion-icon>
                             </a>
                         </li>
                     </ul>
                 </nav>
+
             </div>
         </div>
         <div id="Presentation">
@@ -53,86 +54,79 @@
                     <p class="nadpis">Nejlepší autobusová doprava v ČR</p>
                     <p class="text">Náš cíl v pravidelné autobusové dopravě je úplné zajištění dopravní obslužnosti v regionech. Aktuálně zajišťujeme obslužnost na území deseti krajů naší republiky.</p>
                 </div>
-                <div id="button" >
-                    <button class="bt" href="">Zjistit více</button>
+                <div id="button">
+                    <form method="get" action="Pages/autobus.html">
+                        <button class="bt" type="submit">Zjistit více</button>
+                    </form>
+
                 </div>
             </div>
+
+
 
             <div id="P1-0" class="page">
                 <div id="b1"></div>
                 <div id="title">
-                    <p class="nadpis">Funkční a spolehlivá přeprava</p>
-                    <p class="text">Funkční a spolehlivá přeprava je naším hlavním cílem, společně se spokojeným zákazníkem. Včasná a efektivní komunikace řidičů a dispečerů je osvědčenou cestou ke kvalitnímu servisu.</p>
+                    <p class="nadpis">Tohle jsme my!</p>
+                    <p class="text">ICOM transport a.s. je již více než 25 let jednou z největších dopravních společností v České republice. V současné době provozujeme přes 800 autobusů, 300 souprav nákladních vozidel a zaměstnává více než 1 800 zaměstnanců.</p>
                 </div>
                 <div id="button">
-                    <button class="bt">Zjistit více</button>
+                    <form method="get" action="Pages/oNas.html">
+                        <button class="bt" type="submit">Zjistit více</button>
+                    </form>
                 </div>
             </div>
 
             <div id="P2-0" class="page">
                 <div id="b2"></div>
                 <div id="title">
-                    <p class="nadpis">Tohle jsme my!</p>
-                    <p class="text">ICOM transport a.s. je již více než 25 let jednou z největších dopravních společností v České republice. V současné době provozujeme přes 800 autobusů, 300 souprav nákladních vozidel a zaměstnává více než 1 800 zaměstnanců.</p>
-                </div>
-                <div id="button">
-                    <button class="bt">Zjistit více</button>
-                </div>
-            </div>
-
-            <div id="P3-0" class="page">
-                <div id="b3"></div>
-                <div id="title">
-                    <p class="nadpis">Potřebujeme tě!</p>
-                    <p class="text">Jsi rozený obchodník? Jsi šikovný automechanik a cítíš se nedoceněný? Nebo tě jen nebaví sedět v kanceláři u PC? Přidej se k nám!</p>
-                </div>
-                <div id="button">
-                    <button class="bt">Zjistit více</button>
-                </div>
-            </div>
-
-            <div id="P4-0" class="page">
-                <div id="b4"></div>
-                <div id="title">
                     <p class="nadpis">Rychlá a 100% oprava</p>
                     <p class="text">Měření emisí naftových motorů osobních, užitkových a nákladních automobilů a autobusů.Autorizovaný servis užitkových vozidel, přípojných vozidel a autobusů.Myčky a čerpací stanice pro velká vozidla</p>
                 </div>
                 <div id="button">
-                    <button class="bt">Zjistit více</button>
+                    <form method="get" action="Pages/servis.html">
+                        <button class="bt" type="submit">Zjistit více</button>
+                    </form>
                 </div>
+
+
             </div>
             <div id="Controlls">
                 <div id="InnerControlls">
-                    <img id="Left" class="Arrow Left" src="HSlideShow/Sprites/Arrow.png" alt="">
-                    <img id="Right" class="Arrow Right" src="HSlideShow/Sprites/Arrow.png" alt="">
+                    <img id="Left" class="Arrow Left" src="../HSlideShow/Sprites/Arrow.png" alt="">
+                    <img id="Right" class="Arrow Right" src="../HSlideShow/Sprites/Arrow.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="pat">
-            <ul class="logos">
-                <li class="lg">
-                    <a href="https://www.facebook.com/icomtransport.cz">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                </li>
-                <li class="lg">
-                    <a href="https://www.instagram.com/icom_transport/">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </li>
+        <div id="pati">
+            <div class="pat">
+                <ul class="logos">
+                    <li class="lg">
+                        <a href="https://www.facebook.com/icomtransport.cz">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="lg">
+                        <a href="https://www.instagram.com/icom_transport/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
 
-                <li class="lg">
-                    <a href="https://www.youtube.com/channel/UC1hsYqp2tP-FK21swyFJsGg">
-                        <ion-icon name="logo-youtube"></ion-icon>
-                    </a>
-                </li>
-            </ul>
+                    <li class="lg">
+                        <a href="https://www.youtube.com/channel/UC1hsYqp2tP-FK21swyFJsGg">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <script src="HSlideShow/swiped-events.js"></script>
-    <script src="HSlideShow/HSlideShow.js"></script>
+
+    <script src="../HSlideShow/swiped-events.js"></script>
+    <script src="../HSlideShow/HSlideShow.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
