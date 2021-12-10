@@ -24,11 +24,18 @@
             echo '<div class="Item">
                     
                     <form action="EditEShop.php" method="GET">
-                    <div> </div>
-                    <h1 id="nazev"class="Name">'.$product['Name'].' </h1>
-                    <h1 id="popis"class="Name">'.$product['Description'].'</h1>
-                    <h1 id="cena"class="Name">'.$product['Price'].'Kč </h1>
-                    
+                        <div class="Text">
+                        <ul>
+                        <div>
+
+                            </div>
+                            <li><h1 id="nazev"class="Name">'.$product['Name'].' </h1> </li>
+                            <li><h1 id="popis"class="Name">'.$product['Description'].'</h1></li>
+                            <li><h1 id="cena"class="Name">'.$product['Price'].'Kč </h1></li>
+                            </ul>
+
+                            
+                        </div>
                     </form>
                 </div>
                 ';
