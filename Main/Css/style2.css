@@ -145,16 +145,73 @@ th:first-child {
     list-style: none;
     display: inline-block;
     margin-right: 25px;
+    
 }
+
+.lgs
+{
+    transition: 0.5s;
+}
+
+
 
 ul li a {
     color: rgb(18, 64, 148);
     text-decoration: none;
 }
 
+
+
+
 .am {
+    position: absolute;
     color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
 }
+
+#m1, #m2, #m3, #m4
+{
+    position: relative;
+    left: -70px;
+    border: white;
+    font-weight: normal;
+    border-style: solid;
+    box-shadow: 0px 0px 0px grey;
+    transition: 0.5s;
+
+}
+
+#m1:hover
+{
+    left: -25px;
+    box-shadow: 0px 5px 5px grey;
+}
+
+
+#m2:hover
+{
+    left: -25px;
+    box-shadow: 0px 5px 5px grey;
+}
+#m3:hover
+{
+    
+    left: -25px;
+    box-shadow: 0px 5px 5px grey;
+}
+
+#m4:hover
+{
+    left: -25px;
+    box-shadow: 0px 5px 5px grey;
+}
+
+
+    
+
 
 #tb {
     margin-top: 150px;
